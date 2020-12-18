@@ -69,6 +69,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) // 
 		{
 		case channel_link:
 			system("start www.twitch.tv/teemo_loto");
+			case shutdown:
+				PostQuitmessage(0);
 			break;
 		default:
 			break;
